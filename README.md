@@ -3,7 +3,7 @@
 A reference implementation for Realtime GraphQL Subscription API in Spring Boot using GraphQL Java Tools and GraphQL Spring Boot starter.
 
 
-> Step by step tutorial at: [Spring Boot GraphQL Subscription Realtime API](https://www.viralpatel.net/spring-boot-graphql-subscription-api/)
+> Step by step tutorial at: [Spring Boot GraphQL Subscription Realtime API](https://www.viralpatel.net/spring-boot-graphql-subscription-realtime-api/)
 >
 ### Technologies
 1. Java 11
