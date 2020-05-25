@@ -1,0 +1,27 @@
+plugins {
+	id 'org.springframework.boot' version '2.3.0.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+	id 'java'
+}
+group = 'net.viralpatel'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+	maven {
+		url "https://oss.jfrog.org/artifactory/oss-snapshot-local"
+	}
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'com.graphql-java-kickstart:graphql-spring-boot-starter:7.0.1'
+	implementation 'io.projectreactor:reactor-core'
+	runtimeOnly 'com.graphql-java-kickstart:graphiql-spring-boot-starter:7.0.2-SNAPSHOT'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+test {
+	useJUnitPlatform()
+}

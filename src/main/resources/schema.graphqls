@@ -1,0 +1,19 @@
+type Query {
+    stockDetail(symbol: String): StockDetail
+}
+
+type Subscription {
+    stockPrice(symbol: String): StockPrice
+}
+
+type StockDetail {
+    symbol: String,
+    name: String,
+    marketCap: String
+}
+
+type StockPrice {
+    symbol: String
+    price: String
+    timestamp: String
+}
